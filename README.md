@@ -1,3 +1,6 @@
+A Vue 3 app for tracking your progress through Brandon Sanderson's Cosmere
+
+
 Highlighted books are recommended to read next.
 
 Books with the red locked symbol have unread prerequirements.
