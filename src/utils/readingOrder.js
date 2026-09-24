@@ -17,15 +17,15 @@ export function isUnlocked(book, readStatus, bookMap, requirePrerecs = false) { 
     return meetsPrereqs && meetsPrerecs
 }
 
-export function getRecommendations(books, readStatus) { // returns books that should be read next
+export function getRecommendations(books, readStatus, bookMap) { // returns books that should be read next
     return books.filter(b =>
-        isUnlocked(b, readStatus, true) && (readStatus[b.id] ?? 0) === 0
+        isUnlocked(b, readStatus, bookMap, true) && (readStatus[b.id] ?? 0) === 0
     )
 }
 
-export function getAvailable(books, readStatus) { // returns books that can be read next
+export function getAvailable(books, readStatus, bookMap) { // returns books that can be read next
     return books.filter(b => 
-        isUnlocked(b, readStatus) && (readStatus[b.id] ?? 0) === 0
+        isUnlocked(b, readStatus, bookMap) && (readStatus[b.id] ?? 0) === 0
     )
 }
 

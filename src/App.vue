@@ -17,7 +17,7 @@ const displayedBooks = computed(() => {
 })
 
 const highlighted = computed(() => {
-    if (activeOrder.value === null) return getRecommendations(booksData, readStatus.value)
+    if (activeOrder.value === null) return getRecommendations(booksData, readStatus.value, bookMap)
     const orderDef = ordersData.find(o => o.name === activeOrder.value)
     const nextId = getNextInOrder(orderDef.order, readStatus.value)
     return nextId ? [booksData.find(b => b.id === nextId)] : []
@@ -25,7 +25,7 @@ const highlighted = computed(() => {
 
 const highlightedIds = computed(() => new Set(highlighted.value.map(b => b.id)))
 
-const unlocked = computed (() => isUnlocked(booksData, readStatus.value, bookMap))
+const unlocked = computed (() => booksData.filter(b => isUnlocked(b, readStatus.value, bookMap)))
 
 const unlockedIds = computed(() => new Set(unlocked.value.map(b => b.id)))
 </script>
@@ -33,12 +33,14 @@ const unlockedIds = computed(() => new Set(unlocked.value.map(b => b.id)))
 <template>
     <div class="app">
         <h1>Cosmere Reading Tracker</h1>
-        <p>Yellow highlight means you</p>
+        <p><span class="yellow">Highlighted</span> books are recommended to read next.</p>
+        <p>Books with the <img class="unlock" src="./assets/locked.png" alt="red locked symbol"> have unread prerequirements.</p>
+        <p>Books with the <img class="unlock" src="./assets/unlocked.png" alt="green unlocked symbol"> have no unread prerequirements.</p>
 
         <label>
             Reading order:
             <select :value="activeOrder ?? ''" @change="setOrder($event.target.value || null)">
-                <option value="">Custom (recommendations)</option>
+                <option value="">Custom: Read in whatever order you want and use this site to keep track of what you've read and can read next.</option>
                 <option v-for="o in ordersData" :key="o.name" :value="o.name">{{ o.name }}: {{ o.description }}</option>
             </select>
         </label>
@@ -52,3 +54,15 @@ const unlockedIds = computed(() => new Set(unlocked.value.map(b => b.id)))
         />
     </div>
 </template>
+
+<style scoped>
+.yellow {
+    background-color: #fff8dc;
+}
+.unlock {
+    margin-left: auto;
+    height: 1rem;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+</style>

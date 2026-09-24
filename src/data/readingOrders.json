@@ -18,10 +18,5 @@
         "name": "Balanced Order",
         "description": "This reading order seeks to find a balance between publication order and keeping series together.",
         "order": ["mistborn-final-empire", "mistborn-well-of-ascension", "mistborn-hero-of-ages", "mistborn-eleventh-metal", "elantris", "elantris-10th-anniv", "hope-of-elantris", "emperors-soul", "warbreaker", "shadows-for-silence", "sixth-of-the-dusk", "white-sand-v1", "white-sand-v2", "white-sand-v3", "white-sand-omnibus", "mistborn-alloy-of-law", "mistborn-allomancer-jak", "mistborn-shadows-of-self", "mistborn-bands-of-mourning", "mistborn-secret-history", "mistborn-lost-metal", "stormlight-way-of-kings", "stormlight-words-of-radiance", "stormlight-edgedancer", "stormlight-oathbringer", "stormlight-dawnshard", "stormlight-rhythm-of-war", "stormlight-wind-and-truth", "sunlit-man", "yumi-and-the-nightmare-painter", "tress-of-the-emerald-sea", "isles-of-the-emberdark"]
-    },
-    {
-        "name": "Custom",
-        "description": "Read in whatever order you want and use this site to keep track of what you've read and can read next.",
-        "order": null
     }
 ]

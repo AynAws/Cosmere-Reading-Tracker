@@ -2,7 +2,7 @@
 import { computed } from 'vue'
 import ReadStatusBadge from './ReadStatusBadge.vue'
 
-defineProps(['book', 'status', 'highlighted', 'unlocked'])
+const props = defineProps(['book', 'status', 'highlighted', 'unlocked'])
 defineEmits(['setRead'])
 
 function nextStatus(current) { // loops 0 -> 1 -> 2 -> 0
@@ -10,13 +10,14 @@ function nextStatus(current) { // loops 0 -> 1 -> 2 -> 0
 }
 
 const lockImage = computed(() =>
-    props.unlocked ? '/cosmere-reading-tracker/src/assets/unlocked.png' : '/cosmere-reading-tracker/src/assets/locked.png'
+    props.unlocked ? '/src/assets/unlocked.png' : '/src/assets/locked.png'
 )
 </script>
 
 <template>
     <div class="book-row" :class="{ highlighted }">
         <span class="title">{{ book.title }}</span>
+        <span class="series">{{ book.length }}</span>
         <span class="series" v-if="book.series">{{ book.series }}</span>
         <ReadStatusBadge
           :status="status"
@@ -46,5 +47,8 @@ const lockImage = computed(() =>
 }
 .lock {
     margin-left: auto;
+    height: 1rem;
+    object-fit: contain;
+    flex-shrink: 0;
 }
 </style>
