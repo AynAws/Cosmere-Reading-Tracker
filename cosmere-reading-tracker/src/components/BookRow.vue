@@ -1,12 +1,17 @@
 <script setup>
+import { computed } from 'vue'
 import ReadStatusBadge from './ReadStatusBadge.vue'
 
-defineProps(['book', 'status', 'highlighted'])
+defineProps(['book', 'status', 'highlighted', 'unlocked'])
 defineEmits(['setRead'])
 
 function nextStatus(current) { // loops 0 -> 1 -> 2 -> 0
     return (current + 1) % 3
 }
+
+const lockImage = computed(() =>
+    props.unlocked ? '/cosmere-reading-tracker/src/assets/unlocked.png' : '/cosmere-reading-tracker/src/assets/locked.png'
+)
 </script>
 
 <template>
@@ -17,10 +22,14 @@ function nextStatus(current) { // loops 0 -> 1 -> 2 -> 0
           :status="status"
           @change="$emit('setRead', book.id, nextStatus(status))"
         />
+        <img class="lock"
+          :src="lockImage"
+          :alt="props.unlocked ? 'green unlocked symbol' : 'red locked symbol'"
+        >
     </div>
 </template>
 
-<style scopes>
+<style scoped>
 .book-row {
     display: flex;
     gap: 1rem;
@@ -34,5 +43,8 @@ function nextStatus(current) { // loops 0 -> 1 -> 2 -> 0
 .series {
     color: #888;
     font-size: 0.9em;
+}
+.lock {
+    margin-left: auto;
 }
 </style>

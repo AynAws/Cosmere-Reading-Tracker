@@ -8,6 +8,8 @@ import BookList from './components/BookList.vue'
 
 const { readStatus, setRead, activeOrder, setOrder } = useReadStatus()
 
+const bookMap = Object.fromEntries(booksData.map(b => [b.id, b]))
+
 const displayedBooks = computed(() => {
     if (activeOrder.value === null) return getPublicationOrder(booksData)
     const orderDef = ordersData.find(o => o.name === activeOrder.value)
@@ -22,6 +24,10 @@ const highlighted = computed(() => {
 })
 
 const highlightedIds = computed(() => new Set(highlighted.value.map(b => b.id)))
+
+const unlocked = computed (() => isUnlocked(booksData, readStatus.value, bookMap))
+
+const unlockedIds = computed(() => new Set(unlocked.value.map(b => b.id)))
 </script>
 
 <template>
@@ -41,6 +47,7 @@ const highlightedIds = computed(() => new Set(highlighted.value.map(b => b.id)))
           :books="displayedBooks"
           :readStatus="readStatus"
           :highlightedIds="highlightedIds"
+          :unlockedIds="unlockedIds"
           @setRead="setRead"
         />
     </div>

@@ -1,6 +1,6 @@
 <script setup>
 import BookRow from './BookRow.vue'
-defineProps(['books', 'readStatus', 'highlightedIds'])
+defineProps(['books', 'readStatus', 'highlightedIds', 'unlockedIds'])
 defineEmits(['setRead'])
 </script>
 
@@ -11,6 +11,7 @@ defineEmits(['setRead'])
       :book="book"
       :status="readStatus[book.id] ?? 0"
       :highlighted="highlightedIds.has(book.id)"
+      :unlocked="unlockedIds.has(book.id)"
       @setRead="(id, status) => $emit('setRead', id, status)"
     />
 </template>
