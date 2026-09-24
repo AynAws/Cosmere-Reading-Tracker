@@ -1,4 +1,3 @@
-import { act } from 'react'
 import { ref, watch } from 'vue'
 
 const ACTIVE_ORDER_KEY = 'cosmere-active-order'
@@ -15,7 +14,7 @@ export function useReadStatus() {
         readStatus.value[bookId] = status
     }
 
-    const activeOrder = ref(JSON.parse(localStorage.getItem(ACTIVE_ORDER_KEY) ?? null))
+    const activeOrder = ref(localStorage.getItem(ACTIVE_ORDER_KEY))
 
     watch(activeOrder, (val) => {
         if (!val) localStorage.removeItem(ACTIVE_ORDER_KEY)
@@ -26,5 +25,5 @@ export function useReadStatus() {
         activeOrder.value = orderName
     }
 
-    return { readStatus, setRead, activeOrder, startOrder }
+    return { readStatus, setRead, activeOrder, setOrder }
 }
