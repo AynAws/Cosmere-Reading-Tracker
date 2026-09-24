@@ -10,7 +10,7 @@ function nextStatus(current) { // loops 0 -> 1 -> 2 -> 0
 }
 
 const lockImage = computed(() =>
-    props.unlocked ? '/cosmere-reading-tracker/src/assets/unlocked.png' : '/cosmere-reading-tracker/src/assets/locked.png'
+    props.unlocked ? '../src/assets/unlocked.png' : '../src/assets/locked.png'
 )
 </script>
 
