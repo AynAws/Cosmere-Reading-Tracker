@@ -2,8 +2,8 @@
 import { computed } from 'vue'
 import booksData from './data/books.json'
 import ordersData from './data/readingOrders.json'
-import { getOrderedBooks, getPublicationOrder, isUnlocked, getRecommendations, getNextInOrder } from './utils/readingOrder'
-import { useReadStatus } from './composables/useReadStatus'
+import { getOrderedBooks, getPublicationOrder, isUnlocked, getRecommendations, getNextInOrder } from './utils/readingOrder.js'
+import { useReadStatus } from './composables/useReadStatus.js'
 import BookList from './components/BookList.vue'
 
 const { readStatus, setRead, activeOrder, setOrder } = useReadStatus()
