@@ -1,0 +1,308 @@
+[
+    {
+        "id": "elantris",
+        "title": "Elantris",
+        "releaseDate": "2005-05-01",
+        "series": "Elantris 1",
+        "length": "Novel",
+        "prerequirements": [],
+        "prerecommendations": []
+    },
+    {
+        "id": "hope-of-elantris",
+        "title": "The Hope of Elantris",
+        "releaseDate": "2006-01-01",
+        "series": "Elantris 1.5",
+        "length": "Short Story",
+        "prerequirements": ["elantris"],
+        "prerecommendations": []
+    },
+    {
+        "id": "mistborn-final-empire",
+        "title": "Mistborn: The Final Empire",
+        "releaseDate": "2006-07-17",
+        "series": "Mistborn (Era 1) 1",
+        "length": "Novel",
+        "prerequirements": [],
+        "prerecommendations": []
+    },
+    {
+        "id": "mistborn-well-of-ascension",
+        "title": "The Well of Ascension",
+        "releaseDate": "2007-08-21",
+        "series": "Mistborn (Era 1) 2",
+        "length": "Novel",
+        "prerequirements": ["mistborn-final-empire"],
+        "prerecommendations": []
+    },
+    {
+        "id": "mistborn-hero-of-ages",
+        "title": "The Hero of Ages",
+        "releaseDate": "2008-10-14",
+        "series": "Mistborn (Era 1) 3",
+        "length": "Novel",
+        "prerequirements": ["mistborn-well-of-ascension"],
+        "prerecommendations": []
+    },
+    {
+        "id": "warbreaker",
+        "title": "Warbreaker",
+        "releaseDate": "2009-06-09",
+        "series": null,
+        "length": "Novel",
+        "prerequirements": [],
+        "prerecommendations": []
+    },
+    {
+        "id": "stormlight-way-of-kings",
+        "title": "The Way of Kings",
+        "releaseDate": "2010-08-31",
+        "series": "The Stormlight Archive 1",
+        "length": "Novel",
+        "prerequirements": [],
+        "prerecommendations": ["warbreaker"]
+    },
+    {
+        "id": "mistborn-alloy-of-law",
+        "title": "The Alloy of Law",
+        "releaseDate": "2011-08-11",
+        "series": "Mistborn (Era 2) 1",
+        "length": "Novel",
+        "prerequirements": ["mistborn-hero-of-ages"],
+        "prerecommendations": []
+    },
+    {
+        "id": "mistborn-eleventh-metal",
+        "title": "The Eleventh Metal",
+        "releaseDate": "2011-12-15",
+        "series": "Mistborn (Era 1) 0.5",
+        "length": "Short Story",
+        "prerequirements": [],
+        "prerecommendations": ["mistborn-hero-of-ages"]
+    },
+    {
+        "id": "emperors-soul",
+        "title": "The Emperor's Soul",
+        "releaseDate": "2012-10-11",
+        "series": null,
+        "length": "Novella",
+        "prerequirements": [],
+        "prerecommendations": []
+    },
+    {
+        "id": "shadows-for-silence",
+        "title": "Shadows for Silence in the Forests of Hell",
+        "releaseDate": "2013-12-03",
+        "series": null,
+        "length": "Novella",
+        "prerequirements": [],
+        "prerecommendations": []
+    },
+    {
+        "id": "stormlight-words-of-radiance",
+        "title": "Words of Radiance",
+        "releaseDate": "2014-03-04",
+        "series": "The Stormlight Archive 2",
+        "length": "Novel",
+        "prerequirements": ["stormlight-way-of-kings"],
+        "prerecommendations": []
+    },
+    {
+        "id": "sixth-of-the-dusk",
+        "title": "Sixth of the Dusk",
+        "releaseDate": "2014-10-16",
+        "series": null,
+        "length": "Novella",
+        "prerequirements": [],
+        "prerecommendations": []
+    },
+    {
+        "id": "mistborn-allomancer-jak",
+        "title": "Allomancer Jak and the Pits of Eltania",
+        "releaseDate": "2014-10-16",
+        "series": "Mistborn (Era 2) 1.5",
+        "length": "Short Story",
+        "prerequirements": ["mistborn-alloy-of-law"],
+        "prerecommendations": []
+    },
+    {
+        "id": "mistborn-shadows-of-self",
+        "title": "Shadows of Self",
+        "releaseDate": "2015-01-01",
+        "series": "Mistborn (Era 2) 2",
+        "length": "Novel",
+        "prerequirements": ["mistborn-alloy-of-law"],
+        "prerecommendations": []
+    },
+    {
+        "id": "elantris-10th-anniv",
+        "title": "Elantris (10th anniversary edition)",
+        "releaseDate": "2015-10-06",
+        "series": "Elantris 1",
+        "length": "Bonus Content",
+        "prerequirements": ["elantris"],
+        "prerecommendations": []
+    },
+    {
+        "id": "mistborn-bands-of-mourning",
+        "title": "The Bands of Mourning",
+        "releaseDate": "2016-01-26",
+        "series": "Mistborn (Era 2) 3",
+        "length": "Novel",
+        "prerequirements": ["mistborn-shadows-of-self"],
+        "prerecommendations": []
+    },
+    {
+        "id": "mistborn-secret-history",
+        "title": "Mistborn: Secret History",
+        "releaseDate": "2016-01-30",
+        "series": "Mistborn (Era 1) 3.5",
+        "length": "Novella",
+        "prerequirements": ["mistborn-bands-of-mourning"],
+        "prerecommendations": []
+    },
+    {
+        "id": "white-sand-v1",
+        "title": "White Sand Volume 1",
+        "releaseDate": "2016-06-28",
+        "series": "White Sand 1",
+        "length": "Graphic Novel",
+        "prerequirements": [],
+        "prerecommendations": []
+    },
+    {
+        "id": "stormlight-edgedancer",
+        "title": "Edgedancer",
+        "releaseDate": "2016-11-20",
+        "series": "The Stormlight Archive 2.5",
+        "length": "Novella",
+        "prerequirements": ["stormlight-words-of-radiance"],
+        "prerecommendations": []
+    },
+    {
+        "id": "stormlight-oathbringer",
+        "title": "Oathbringer",
+        "releaseDate": "2017-11-14",
+        "series": "The Stormlight Archive 3",
+        "length": "Novel",
+        "prerequirements": ["stormlight-words-of-radiance"],
+        "prerecommendations": ["stormlight-edgedancer"]
+    },
+    {
+        "id": "white-sand-v2",
+        "title": "White Sand Volume 2",
+        "releaseDate": "2018-02-21",
+        "series": "White Sand 2",
+        "length": "Graphic Novel",
+        "prerequirements": ["white-sand-v1"],
+        "prerecommendations": []
+    },
+    {
+        "id": "white-sand-v3",
+        "title": "White Sand Volume 3",
+        "releaseDate": "2019-09-18",
+        "series": "White Sand 3",
+        "length": "Graphic Novel",
+        "prerequirements": ["white-sand-v2"],
+        "prerecommendations": []
+    },
+    {
+        "id": "stormlight-dawnshard",
+        "title": "Dawnshard",
+        "releaseDate": "2020-11-05",
+        "series": "The Stormlight Archive 3.5",
+        "length": "Novella",
+        "prerequirements": ["stormlight-oathbringer"],
+        "prerecommendations": []
+    },
+    {
+        "id": "stormlight-rhythm-of-war",
+        "title": "Rhythm of War",
+        "releaseDate": "2020-11-17",
+        "series": "The Stormlight Archive 4",
+        "length": "Novel",
+        "prerequirements": ["stormlight-oathbringer"],
+        "prerecommendations": ["stormlight-dawnshard", "white-sand-v3"]
+    },
+    {
+        "id": "mistborn-lost-metal",
+        "title": "The Lost Metal",
+        "releaseDate": "2022-11-15",
+        "series": "Mistborn (Era 2) 4",
+        "length": "Novel",
+        "prerequirements": ["mistborn-bands-of-mourning"],
+        "prerecommendations": []
+    },
+    {
+        "id": "white-sand-omnibus",
+        "title": "White Sand Omnibus",
+        "releaseDate": "2022-12-01",
+        "series": "White Sand",
+        "length": "Bonus Content",
+        "prerequirements": ["white-sand-v3"],
+        "prerecommendations": []
+    },
+    {
+        "id": "tress-of-the-emerald-sea",
+        "title": "Tress of the Emerald Sea",
+        "releaseDate": "2023-10-01",
+        "series": null,
+        "length": "Novel",
+        "prerequirements": [],
+        "prerecommendations": ["elantris", "sixth-of-the-dusk", "warbreaker", "mistborn-secret-history", "white-sand-v3", "stormlight-rhythm-of-war"]
+    },
+    {
+        "id": "yumi-and-the-nightmare-painter",
+        "title": "Yumi and the Nightmare Painter",
+        "releaseDate": "2023-07-01",
+        "series": null,
+        "length": "Novel",
+        "prerequirements": [],
+        "prerecommendations": ["stormlight-oathbringer", "warbreaker"]
+    },
+    {
+        "id": "sunlit-man",
+        "title": "The Sunlit Man",
+        "releaseDate": "2023-10-01",
+        "series": null,
+        "length": "Novel",
+        "prerequirements": [],
+        "prerecommendations": ["stormlight-dawnshard", "stormlight-rhythm-of-war", "shadows-for-silence", "mistborn-lost-metal"]
+    },
+    {
+        "id": "stormlight-wind-and-truth",
+        "title": "Wind and Truth",
+        "releaseDate": "2024-12-06",
+        "series": "The Stormlight Archive 5",
+        "length": "Novel",
+        "prerequirements": ["stormlight-rhythm-of-war"],
+        "prerecommendations": ["sunlit-man", "mistborn-secret-history"]
+    },
+    {
+        "id": "isles-of-the-emberdark",
+        "title": "Isles of the Emberdark",
+        "releaseDate": "2025-07-01",
+        "series": null,
+        "length": "Novel",
+        "prerequirements": [],
+        "prerecommendations": ["sixth-of-the-dusk"]
+    },
+    {
+        "id": "stormlight-elsecaller",
+        "title": "Elsecaller",
+        "releaseDate": "2025-12-04",
+        "series": "The Stormlight Archive 2.5",
+        "length": "Short Story",
+        "prerequirements": ["stormlight-words-of-radiance"],
+        "prerecommendations": []
+    },
+    {
+        "id": "king-lopen-the-first",
+        "title": "King Lopen the First of Alethkar",
+        "releaseDate": "2025-12-04",
+        "series": "The Stormlight Archive 2.5",
+        "length": "Short Story",
+        "prerequirements": ["stormlight-words-of-radiance"],
+        "prerecommendations": []
+    }
+]
